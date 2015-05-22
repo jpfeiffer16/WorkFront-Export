@@ -1,0 +1,27 @@
+<!doctype html>
+<style type="text/css">
+	#mainPopup {
+		padding: 10px;
+		height: 200px;
+		width: 400px;
+		font-family: Helvetica, Ubuntu, Arial, sans-serif;
+	}
+	h1 {
+		font-size: 2em;
+	}
+</style>
+
+<div id="mainPopup">
+<h1>Temp</h1>
+<p>This is a list of the the reports currently in memory. Press the download button to append and download them all.</p>
+<ul id="reportList">
+	<li>Test</li>
+	<li>Test</li>
+	<li>Test</li>
+	<li>Test</li>
+	<li>Test</li>
+</ul>
+<button id="btnDownload" onclick="">Download</button>
+<button id="btnSave" onclick="runReportAndSave()">Save Timesheet</button>
+</div>
+<script src="exporter-ui.js"></script>
