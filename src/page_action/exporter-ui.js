@@ -1,6 +1,11 @@
 var runReportAndSave = function() {
 	var result = exportToCsv(false);
 	localStorage.setItem(result.title, result.body);
+	chrome.runtime.sendMessage(
+		'jbjaclcdmdkgngnebemkianabfmhhgdm',
+		'Test',
+		{eventType: 'DoneExporting'}
+	);
 };
 
 var getReports = function() {

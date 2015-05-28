@@ -60,7 +60,7 @@ var exportToCsv = function(shouldDownload) {
 		addScriptTagWithSrc('http://code.jquery.com/jquery-1.11.3.min.js');
 	}
 	//Now we can do some work!
-	addScriptTagWithSrc(chrome.extension.getURL('/js/export-storage.js'));
+//	addScriptTagWithSrc(chrome.extension.getURL('/js/export-storage.js'));
 	return exportWithJquery(shouldDownload);
 };
 

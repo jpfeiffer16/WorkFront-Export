@@ -1,6 +1,9 @@
 var runReportAndSave = function() {
 	var result = exportToCsv(false);
 	localStorage.setItem(result.title, result.body);
+	chrome.runtime.sendMessage('jbjaclcdmdkgngnebemkianabfmhhgdm', 'Test', {}, function() {
+		console.log('Respose recieved to message send');
+	});
 };
 
 var getReports = function() {
