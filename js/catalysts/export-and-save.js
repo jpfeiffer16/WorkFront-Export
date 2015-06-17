@@ -1,3 +1,3 @@
 (function() {
-	runReportAndSave();
+	exportToCsv(true);
 })();

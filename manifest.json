@@ -17,9 +17,9 @@
   },
   "page_action": {
     "default_icon": "icons/icon.png",
-    "default_title": "Attask Exporter",
-    "default_script": "src/exporter-ui.js",
-    "default_popup": "src/page_action/page_action.html"
+    "default_title": "Attask Exporter"
+    // "default_script": "src/exporter-ui.js",
+    // "default_popup": "src/page_action/page_action.html"
   },
   "content_scripts": [
     {
