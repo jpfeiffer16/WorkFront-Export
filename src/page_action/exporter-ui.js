@@ -46,6 +46,13 @@ var init = function() {
 	});
 };
 
+chrome.extension.onMessage.addListener(
+  function(request, sender, sendResponse) {
+  	chrome.pageAction.show(sender.tab.id);
+    console.log('Message Recieved');
+    sendResponse();
+});
+
 (function() {
 	var list = document.getElementById('reportList');
 	var newlistItem = document.createElement('li');

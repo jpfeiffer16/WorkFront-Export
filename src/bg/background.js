@@ -2,7 +2,7 @@
 chrome.extension.onMessage.addListener(
   function(request, sender, sendResponse) {
   	chrome.pageAction.show(sender.tab.id);
-	console.log('Message Recieved');
+    console.log('Message Recieved');
     sendResponse();
   });
   
